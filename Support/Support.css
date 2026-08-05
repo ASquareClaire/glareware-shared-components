@@ -1,0 +1,41 @@
+.support-card {
+  --support-accent: var(--brass, #c9a227);
+  --support-hover: var(--tube-teal, #4fd1c5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px auto 0;
+  padding: 14px 20px;
+  max-width: 280px;
+  background: rgba(201, 162, 39, 0.06);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  border-radius: 14px;
+}
+
+.support-card__label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--support-accent);
+}
+
+.support-card__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.support-card__row {
+  margin: 5px;
+}
+
+.support-link {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: rgba(244, 239, 228, 0.4);
+  text-decoration: underline;
+}
+
+.support-link:hover {
+  color: var(--support-hover);
+}

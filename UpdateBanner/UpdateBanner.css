@@ -1,0 +1,54 @@
+.update-banner {
+  --update-bg: var(--chassis, #1a1a24);
+  --update-border: var(--tube-red, #e8452c);
+  --update-text: var(--panel-cream, #f4efe4);
+
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--update-bg);
+  border: 1.5px solid var(--update-border);
+  box-shadow: 0 0 16px rgba(232, 69, 44, 0.4);
+  border-radius: 999px;
+  padding: 10px 18px;
+  max-width: calc(100% - 32px);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--update-text);
+  z-index: 100;
+}
+
+.update-banner button {
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  background: var(--update-border);
+  color: var(--update-text);
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Below this width the pill can't fit the text on one line without
+   wrapping into an odd shape - switch to a stacked card instead. */
+@media (max-width: 480px) {
+  .update-banner {
+    flex-direction: column;
+    border-radius: 14px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .update-banner button {
+    width: 100%;
+  }
+}
