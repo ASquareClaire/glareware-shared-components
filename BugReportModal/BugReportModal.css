@@ -1,0 +1,107 @@
+.bug-report-toggle {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--bugreport-muted, rgba(244, 239, 228, 0.4));
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  margin: 12px auto 0;
+}
+
+.bug-report-toggle:hover {
+  color: var(--bugreport-accent, #4fd1c5);
+}
+
+.bug-report-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.bug-report-modal {
+  background: var(--bugreport-bg, #1a1a24);
+  border: 1.5px solid var(--bugreport-border, #c9a227);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.bug-report-modal h2 {
+  font-family: var(--font-heading, var(--font-body));
+  color: var(--bugreport-text, #f4efe4);
+  font-size: 1rem;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.bug-report-modal textarea,
+.bug-report-modal input {
+  width: 100%;
+  background: rgba(244, 239, 228, 0.05);
+  border: 1px solid rgba(244, 239, 228, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--bugreport-text, #f4efe4);
+  font-family: var(--font-body);
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.bug-report-modal textarea:focus,
+.bug-report-modal input:focus {
+  outline: 2px solid var(--bugreport-accent, #4fd1c5);
+  outline-offset: 1px;
+}
+
+.bug-report-error {
+  color: var(--bugreport-error, #e8452c);
+  font-size: 0.85rem;
+  margin: 0 0 10px;
+}
+
+.bug-report-thanks {
+  color: var(--bugreport-accent, #4fd1c5);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.bug-report-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.bug-report-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.bug-report-btn--primary {
+  background: var(--bugreport-accent, #4fd1c5);
+  color: var(--bugreport-bg, #1a1a24);
+  font-weight: 700;
+}
+
+.bug-report-btn--primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.bug-report-btn--secondary {
+  background: transparent;
+  color: var(--bugreport-text, #f4efe4);
+  border: 1px solid rgba(244, 239, 228, 0.3);
+}
