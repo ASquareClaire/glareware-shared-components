@@ -8,8 +8,8 @@
   margin: 16px auto 0;
   padding: 14px 20px;
   max-width: 280px;
-  background: rgba(201, 162, 39, 0.06);
-  border: 1px solid rgba(201, 162, 39, 0.25);
+  background: var(--support-bg, rgba(201, 162, 39, 0.06));
+  border: 1px solid var(--support-border, rgba(201, 162, 39, 0.25));
   border-radius: 14px;
 }
 
@@ -17,7 +17,7 @@
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--support-accent);
+  color: var(--support-accent, #c9a227);
 }
 
 .support-card__links {
@@ -32,10 +32,10 @@
 .support-link {
   font-family: var(--font-body);
   font-size: 0.75rem;
-  color: rgba(244, 239, 228, 0.4);
+  color: var(--support-link, rgba(244, 239, 228, 0.4));
   text-decoration: underline;
 }
 
 .support-link:hover {
-  color: var(--support-hover);
+  color: var(--support-hover, #4fd1c5);
 }
