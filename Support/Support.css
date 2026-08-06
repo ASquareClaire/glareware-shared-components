@@ -1,7 +1,4 @@
 .support-card {
-  --support-accent: var(--brass, #c9a227);
-  --support-hover: var(--tube-teal, #4fd1c5);
-
   display: flex;
   flex-direction: column;
   align-items: center;
